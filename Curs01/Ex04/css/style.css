@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+}
+
+.header-top {
+  margin: 20px;
+}
+.header-top .header-top-inner {
+  padding: 0 120px;
+}
+.header-top .header-top-inner .header-controls {
+  margin-top: 15px;
+}
+
+#header :first-child {
+  color: green;
+}
+#header .header-second {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
