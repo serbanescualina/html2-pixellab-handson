@@ -1,0 +1,27 @@
+.circles {
+  width: 80%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.circle, .circle-blue, .circle-green, .circle-red {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

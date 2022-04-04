@@ -1,0 +1,25 @@
+@mixin mq-md-down {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mq-md-up {
+  @media (min-width: 501px) {
+    @content;
+  }
+}
+
+@include mq-md-down() {
+  .box-2 {
+    display: none;
+  }
+}
+
+// v2
+
+.box-2 {
+  @include mq-md-up() {
+    background-color: green;
+  }
+}
