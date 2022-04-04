@@ -28,6 +28,49 @@
 
 .circle-blue {
   @extend .circle;
-
   background-color: blue;
+}
+
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+
+.square-magenta {
+  @extend .square;
+  background-color: magenta;
+}
+
+.square-peru {
+  @extend .square;
+  background-color: peru;
+}
+
+.square-purple {
+  @extend .square;
+  background-color: purple;
+}
+
+.square-blue {
+  @extend .square;
+  background-color: blue;
+}
+
+.square-green {
+  @extend .square;
+  background-color: green;
+}
+
+.square-red {
+  @extend .square;
+  background-color: red;
 }
