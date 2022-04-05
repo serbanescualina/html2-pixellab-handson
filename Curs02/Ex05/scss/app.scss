@@ -9,3 +9,19 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+@for $i from 1 through 9 {
+  .box-0#{$i} {
+    border: #{$i}px solid black;
+  }
+}
+
+@for $i from 1 through 9 {
+  .box-#{$i} {
+    @if $i % 2 == 0 {
+      background-color: gray;
+    } @else {
+      border: 2px dotted lawngreen;
+    }
+  }
+}
