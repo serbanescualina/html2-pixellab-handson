@@ -1,0 +1,24 @@
+/* punctul 1 */
+
+@keyframes box-1 {
+  33.3% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  66.6% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.box-1 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  animation: box-1 10s ease-out;
+}
+
+/* punctul 2 */

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+body > div:first-child {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+body > div:first-child span {
+  animation: blink 1.5s linear infinite alternate;
+}
