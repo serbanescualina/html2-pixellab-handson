@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+body > div:first-child {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes blackandwhite {
+  0% {
+    clolor: black;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+body > div:first-child span {
+  animation: blackandwhite 1.5s linear infinite alternate;
+}
