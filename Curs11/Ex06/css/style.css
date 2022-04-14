@@ -18,3 +18,26 @@
   background-color: lightsalmon;
 }
 /* can't touch this 🔨 */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 25px 1fr 10px 1fr 25px 300px;
+  grid-template-rows: 200px 10px 300px 10px 10px 150px 90px;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: -1;
+}
+
+.grid-item-3 {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+}

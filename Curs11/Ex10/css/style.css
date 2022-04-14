@@ -18,7 +18,7 @@
 }
 
 .grid-item-4 {
-  background-color: lightsalmon
+  background-color: lightsalmon;
 }
 
 .grid-item-5 {
@@ -26,4 +26,7 @@
 }
 /* can't touch this 🔨 */
 
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 1fr 400px 2fr 250px 10px;
+}
