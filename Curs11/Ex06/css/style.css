@@ -22,7 +22,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 250px 25px 1fr 10px 1fr 25px 300px;
-  grid-template-rows: 200px 10px 300px 10px 10px 150px 90px;
+  grid-template-rows: 200px 10px 300px 10px 10px;
 }
 
 .grid-item-1 {
@@ -38,6 +38,11 @@
 }
 
 .grid-item-3 {
-  grid-column-start: 3;
-  grid-column-end: span 1;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.grid-item-4 {
+  grid-column: 5 / span 1;
+  grid-row: 3 / span 1;
 }
