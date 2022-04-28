@@ -17,9 +17,161 @@
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
   >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  >
 </head>
 
 <body>
+  <form action="">
+    <header class="container">
+      <h1>Formular Produs</h1>
+    </header>
+
+    <main class="container">
+      <fieldset>
+        <legend>Produs</legend>
+
+        <section class="row">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div>
+              <label
+                for="product-image"
+                class="form-label"
+              >Imagine principala * </label>
+
+              <input
+                type="file"
+                name="product-image"
+                id="product-image"
+                class="form-control"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="product-category"
+                class="input-group-text"
+              >Categorie *</label>
+              <select
+                name="product-category"
+                id="product-category"
+                class="form-select"
+                required
+              >
+                <option value="">-- categorie --</option>
+                <option value="">Ciocolata</option>
+                <option value="">Sucuri acidulate</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+            <div class="input-group">
+              <label
+                for="product-short-description"
+                class="input-group-text"
+              >Descriere scurta *</label>
+
+              <textarea
+                name="product-short-description"
+                id="product-short-description"
+                cols="30"
+                rows="4"
+                class="form-control"
+                placeholder="Descriere scurta *"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="mt-4">
+        <legend>Pret</legend>
+
+        <section class="mb-2">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="show-offer"
+              id="show-offer"
+              class="form-check-input"
+            >
+
+            <label for="show-offer">Afiseaza oferta pe produs</label>
+          </div>
+        </section>
+
+        <section class="row">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="product-price"
+                class="input-group-text"
+              >Pret *</label>
+
+              <input
+                type="text"
+                name="product-price"
+                id="product-price"
+                class="form-control"
+                placeholder="Pret *"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+            <div class="input-group">
+              <label
+                for="product-offer-price"
+                class="input-group-text"
+              >Pret redus</label>
+              <input
+                type="text"
+                name="product-offer-price"
+                id="product-offer-price"
+                class="form-control"
+                placeholder="Pret redus"
+              >
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="mt-4">
+        <legend>Brand (optional)</legend>
+        <section class="row">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">a
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">b
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="mt-4">
+        <legend>Furnizor (optional)</legend>
+
+        <section class="row">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">x
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">y
+          </div>
+        </section>
+      </fieldset>
+    </main>
+
+    <footer class="container">
+      <!-- add buttons, text-center -->
+    </footer>
+  </form>
 
   <div
     class="pixeltab-host"
