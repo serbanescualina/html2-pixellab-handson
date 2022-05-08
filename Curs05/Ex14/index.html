@@ -70,9 +70,76 @@
 
               </select>
             </div>
+
+            <div class="input-group">
+              <label
+                for="product-brand"
+                class="input-group-text"
+              >Brand</label>
+              <select
+                name="product-brand"
+                id="product-brand"
+                class="form-select"
+              >
+                <option value="">-- Brand --</option>
+                <option value="">Brand 1</option>
+                <option value="">Brand 2</option>
+
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label
+                for="product-furnizor"
+                class="input-group-text"
+              >Furnizor</label>
+              <select
+                name="product-furnizor"
+                id="product-furnizor"
+                class="form-select"
+              >
+                <option value="">-- Furnizor --</option>
+                <option value="">Furnizor 1</option>
+                <option value="">Furnizor 2</option>
+
+              </select>
+            </div>
           </div>
 
           <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+            <div class="input-group">
+              <label
+                for="product-name"
+                class="input-group-text"
+              >Numele produsului *</label>
+
+              <input
+                type="text"
+                name="product-name"
+                id="product-name"
+                class="form-control"
+                placeholder="Numele produsului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="product-description"
+                class="input-group-text"
+              >Descriere lunga *</label>
+
+              <textarea
+                name="product-description"
+                id="product-description"
+                cols="30"
+                rows="8"
+                class="form-control"
+                placeholder="Descriere lunga *"
+                required
+              ></textarea>
+            </div>
+
             <div class="input-group">
               <label
                 for="product-short-description"
@@ -129,6 +196,19 @@
           </div>
 
           <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+            <section class="mb-2">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="show-price-offer"
+                  id="show-price-offer"
+                  class="form-check-input"
+                >
+
+                <label for="show-price-offer">Afiseaza pret redus</label>
+              </div>
+            </section>
+
             <div class="input-group">
               <label
                 for="product-offer-price"
@@ -149,9 +229,70 @@
       <fieldset class="mt-4">
         <legend>Brand (optional)</legend>
         <section class="row">
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">a
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                name="brand-enabled"
+                id="brand-enabled"
+                class="form-check-input"
+                checked
+              >
+              <label
+                for="brand-enabled"
+                class="form-check-label"
+              >Adauga Brand</label>
+            </div>
+
+            <div class="input-group">
+              <label
+                for="brand-name"
+                class="input-group-text"
+              >Numele brandului</label>
+
+              <input
+                type="text"
+                name="brand-name"
+                id="brand-name"
+                class="form-control"
+                placeholder="Numele brandului"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="brand-description"
+                class="input-group-text"
+              >Descriere brand</label>
+
+              <textarea
+                name="brand-description"
+                id="brand-description"
+                cols="30"
+                rows="5"
+                class="form-control"
+                placeholder="Descriere brand"
+                required
+              ></textarea>
+            </div>
           </div>
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">b
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="brand-adress"
+                class="input-group-text"
+              >Adresa brand</label>
+
+              <textarea
+                name="brand-adress"
+                id="brand-adress"
+                cols="30"
+                rows="5"
+                class="form-control"
+                placeholder="Adresa brand"
+                required
+              ></textarea>
+            </div>
           </div>
         </section>
       </fieldset>
@@ -160,16 +301,86 @@
         <legend>Furnizor (optional)</legend>
 
         <section class="row">
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">x
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                name="furnizor-enabled"
+                id="furnizor-enabled"
+                class="form-check-input"
+                checked
+              >
+              <label
+                for="furnizor-enabled"
+                class="form-check-label"
+              >Adauga Furnizor</label>
+            </div>
+
+            <div class="input-group">
+              <label
+                for="furnizor-name"
+                class="input-group-text"
+              >Numele furnizorului</label>
+
+              <input
+                type="text"
+                name="furnizor-name"
+                id="furnizor-name"
+                class="form-control"
+                placeholder="Numele furnizorului"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="furnizor-description"
+                class="input-group-text"
+              >Descriere furnizor</label>
+
+              <textarea
+                name="furnizor-description"
+                id="furnizor-description"
+                cols="30"
+                rows="5"
+                class="form-control"
+                placeholder="Descriere furnizor"
+                required
+              ></textarea>
+            </div>
           </div>
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">y
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="furnizor-adress"
+                class="input-group-text"
+              >Adresa furnizor</label>
+
+              <textarea
+                name="furnizor-adress"
+                id="furnizor-adress"
+                cols="30"
+                rows="5"
+                class="form-control"
+                placeholder="Adresa furnizor"
+                required
+              ></textarea>
+            </div>
           </div>
         </section>
       </fieldset>
     </main>
 
-    <footer class="container">
-      <!-- add buttons, text-center -->
+    <footer class="container text-center mt-5">
+      <button
+        type="button"
+        class="btn btn-outline-danger btn-lg"
+        title="Reseteaza"
+      >Reseteaza tot</button>
+      <button
+        type="submit"
+        title="Salveaza Reteta"
+        class="btn btn-primary btn-lg"
+      >Salveaza Reteta</button>
     </footer>
   </form>
 
